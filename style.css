@@ -1,0 +1,18 @@
+html{
+        background-color: blue;
+}
+.container{
+	width: 16px;
+	height:16px;
+	border: 2px solid black; 
+	position: absolute;
+	display: block;
+	align-items: center; 
+	margin: 20px 20px 20px 20px;
+	padding: 10px 10px 10px 10px;
+}
+}
+.content{
+        display: block;
+        border: 1px solid black; 
+}
