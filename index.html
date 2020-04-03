@@ -19,7 +19,7 @@
 <script>
 function addGridItems(inputNum){
 
-   let wantedColumnsAndRows= inputNum;
+   let wantedColumnsAndRows= inputNum*inputNum;
  
     while(numberOfColumns < wantedColumnsAndRows){
       const container = document.querySelector('.container');
@@ -28,7 +28,10 @@ function addGridItems(inputNum){
      
       container.appendChild(content);
   
-     document.querySelector('.container').style.gridAutoRows= "10px";
+     document.querySelector('.container').style.gridAutoRows= "50px";
+      
+     document.querySelector('.container').style.gridAutoColumns= "50px";
+      
 
       numberOfColumns +=1;
   
