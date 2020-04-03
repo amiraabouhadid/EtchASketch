@@ -26,14 +26,14 @@ function addGridItems(inputNum){
       const content = document.createElement('div');
       content.classList.add('content');
      
-     
-      document.querySelector('.container').style.gridAutoFlow="row dense";
-      let columnWidth =(1/inputNum *100)*200;
-      document.querySelector('.content').style.columnWidth= columnWidth;
-       document.querySelector('.content').style.columnCount=inputNum;
-      document.querySelector('.content').style.rowCount=inputNum;
-     
       container.appendChild(content);
+      document.querySelector('.container').style.grid
+      document.querySelector('.container').style.columnWidth= 1fr;
+      //document.querySelector('.container').style.rowWidth= 1fr;
+      document.querySelector('.container').style.columnCount=inputNum;
+      document.querySelector('.container').style.rowCount=inputNum;
+     
+
       numberOfColumns +=1;
       
     
