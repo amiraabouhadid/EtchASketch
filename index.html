@@ -4,18 +4,34 @@
 <title>" Etch A Sketch"</titile>
 </head>
 <body>
+  <form>
+    <input class="userInput" type = "text">
+  </form>
+    
 <div class= "container">
-
+</div>
+<div class="buttons">
+  <button class= "button" id="clear">Clear</button>
 </div>
 
+
 <script>
+function addGridItems(e){
+  input.textContent=wantedNumberOfGridItems;
+  
+while(numberOfGridItems < wantedNumberOfGridItems){
 const container = document.querySelector('.container');
 const content = document.createElement('div');
 content.classList.add('content');
 
 container.appendChild(content);
-console.log(container);
-console.log(content);
+numberOfGridItems +=1;
+  }
+}
+numberOfGridItems=0;
+const userInput = document.querySelector('.userInput');
+userInput.forEach( userInput => userInput.addEventListener ('input', addGridItems));
+
 </script>
 </body>
 <footer></footer>
