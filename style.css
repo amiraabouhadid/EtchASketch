@@ -3,6 +3,8 @@ html{
 }
 .container{
 	display: grid;
+	width: 960px;
+	height: 960px;
 	grid-template-columns: auto auto auto; 
 	background-color: white; 
 	padding: 10px;	
