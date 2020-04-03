@@ -18,7 +18,8 @@
 
 <script>
 function addGridItems(e){
-   let wantedNumberOfGridItems= e.target.value;
+  log.textContent=e.target.value;
+   let wantedNumberOfGridItems= Number(log.textContent);
 
   
 while(numberOfGridItems < wantedNumberOfGridItems){
@@ -33,6 +34,8 @@ numberOfGridItems +=1;
 numberOfGridItems=0;
 
 const userInput = document.querySelector('.userInput');  
+const log= document.getElementById('values');
+ 
 userInput.addEventListener ('input', addGridItems());
 
 
