@@ -22,16 +22,16 @@ function addGridItems(inputNum){
    let wantedColumnsAndRows= inputNum * inputNum;
 
   console.log(wantedColumnsAndRows);
-    while(numberOfColumns <= wantedColumnsAndRows){
+    while(numberOfColumns < wantedColumnsAndRows){
       const container = document.querySelector('.container');
       const content = document.createElement('div');
       content.classList.add('content');
      
       container.appendChild(content);
       document.querySelector('.container').style.gridAutoFlow="column dense";
-      //document.querySelector('.content').style.columnWidth=auto;
+      document.querySelector('.content').style.columnWidth=(1/inputNum) %;
        document.querySelector('.content').style.columnCount=inputNum;
-       //document.querySelector('.content
+     
       console.log(numberOfColumns);
       numberOfColumns +=1;
       
@@ -66,7 +66,6 @@ const log= document.getElementById('values');
   }
  
 
-//userInput.addEventListener ('input', addGridItems());
 
 
 </script>
