@@ -26,8 +26,10 @@ function addGridItems(inputNum){
       const container = document.querySelector('.container');
       const columns = document.createElement('div');
       columns.classList.add('columns');
+     
       container.appendChild(columns);
-      
+      document.querySelector('.container').style.grid-template-columns=numberOfColumnsAndRows;
+      document.querySelector(.'container').style.grid-template-rows = numberOfColumnsAndRows;
       numberOfColumnsAndRows +=1;
       console.log(numberOfColumnsAndRows);
     
