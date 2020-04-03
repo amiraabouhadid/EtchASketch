@@ -20,20 +20,20 @@
 function addGridItems(inputNum){
 
    let wantedColumnsAndRows= inputNum;
-  console.log(wantedColumnsAndRows);
+ 
     while(numberOfColumns < wantedColumnsAndRows){
       const container = document.querySelector('.container');
       const content = document.createElement('div');
       content.classList.add('content');
      
-      container.appendChild(content);
+     
       document.querySelector('.container').style.gridAutoFlow="row dense";
       let columnWidth =(1/inputNum *100)*200;
       document.querySelector('.content').style.columnWidth= columnWidth;
        document.querySelector('.content').style.columnCount=inputNum;
       document.querySelector('.content').style.rowCount=inputNum;
      
-      console.log(numberOfColumns);
+      container.appendChild(content);
       numberOfColumns +=1;
       
     
