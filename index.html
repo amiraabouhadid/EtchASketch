@@ -24,11 +24,14 @@ function addGridItems(inputNum){
   console.log(wantedColumnsAndRows);
     while(numberOfColumns <= wantedColumnsAndRows){
       const container = document.querySelector('.container');
-      const columns = document.createElement('div');
-      columns.classList.add('columns');
+      const content = document.createElement('div');
+      content.classList.add('content');
      
-      container.appendChild(columns);
+      container.appendChild(content);
       document.querySelector('.container').style.gridAutoFlow="column dense";
+      document.querySelector('.content').style.columnWidth=auto;
+       document.querySelector('.content').style.columnCount=inputNum;
+       //document.querySelector('.content
       console.log(numberOfColumns);
       numberOfColumns +=1;
       
