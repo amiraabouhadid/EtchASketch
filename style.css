@@ -4,8 +4,8 @@ html{
 }
 .container{
 	display: grid;
-	width: 200px;
-	height: 200px;
+	width: 600px;
+	height: 600px;
 	background-color: white; 
 	padding: 10px;	
 }
