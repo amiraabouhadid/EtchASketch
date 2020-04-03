@@ -21,14 +21,15 @@ function addGridItems(inputNum){
 
    let wantedNumberOfGridItems= inputNum;
 
-  
+  console.log(wantedNumberOfGridItems);
 while(numberOfGridItems < wantedNumberOfGridItems){
 const container = document.querySelector('.container');
 const content = document.createElement('div');
 content.classList.add('content');
-
+console.log(numberOfGridItems);
 container.appendChild(content);
 numberOfGridItems +=1;
+  
   }
 } 
 numberOfGridItems=0;
