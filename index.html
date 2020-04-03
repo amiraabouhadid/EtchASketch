@@ -19,20 +19,33 @@
 <script>
 function addGridItems(inputNum){
 
-   let wantedNumberOfGridItems= inputNum;
+   let wantedColumnsAndRows= inputNum;
 
-  console.log(wantedNumberOfGridItems);
-    while(numberOfGridItems < wantedNumberOfGridItems){
+  console.log(wantedColumnsAndRows);
+    while(numberOfColumns < wantedColumnsAndRows){
       const container = document.querySelector('.container');
-      const content = document.createElement('div');
-      content.classList.add('content');
-console.log(numberOfGridItems);
-      container.appendChild(content);
-      numberOfGridItems +=1;
+      const columns = document.createElement('div');
+      columns.classList.add('columns');
+      container.appendChild(columns);
+      
+      numberOfColumns +=1;
+      console.log(numberOfColumns);
+    
+     while(numberOfRows <wantedColumnsAndRows){
+      const container = document.querySelector('.container');
+      const rows= document.createElement('div');
+      rows.classList.add('rows');
+      container.appendChild(rows);
+       
+       numberOfRows +=1;
+       console.log(numberOfRows);
+     }
+      
   
   }
 } 
-numberOfGridItems=0;
+numberOfColumns=0;
+numberOfRows=0;
 
 const userInput = document.querySelector('.userInput');  
 const log= document.getElementById('values');
