@@ -9,7 +9,7 @@ html{
 	background-color: white; 
 	padding: 10px;	
 }
-.content{
+.container div{
 	
   	padding: 1px; 
 	background-color: rgba(255, 255, 255, 0.8);
