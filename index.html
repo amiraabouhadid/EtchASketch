@@ -19,7 +19,7 @@
 <script>
 function addGridItems(inputNum){
 
-   let wantedColumnsAndRows= inputNum*inputNum;
+   let wantedColumnsAndRows= inputNum;
 
   console.log(wantedColumnsAndRows);
     while(numberOfColumnsAndRows <= wantedColumnsAndRows){
@@ -29,19 +29,20 @@ function addGridItems(inputNum){
      
       container.appendChild(columns);
       document.querySelector('.container').style.gridAutoFlow="column dense";
-      //document.querySelector(.'container').style.grid-template-rows = numberOfColumnsAndRows;
-      numberOfColumnsAndRows +=1;
       console.log(numberOfColumnsAndRows);
+      numberOfColumnsAndRows +=1;
+      
     
-     /*while(numberOfRows =<wantedColumnsAndRows){
+     while(numberOfColumnsAndRows <=wantedColumnsAndRows){
       const container = document.querySelector('.container');
       const rows= document.createElement('div');
       rows.classList.add('rows');
       container.appendChild(rows);
-       
-       numberOfRows +=1;
-       console.log(numberOfRows);
-     }*/
+      document.querySelector(.'container').style.gridAutoFlow="row dense";
+        console.log(numberOfColumnsAndRows);
+       numberOfColumnsAndRows +=1;
+      
+     }
       
   
   }
