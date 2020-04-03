@@ -14,10 +14,10 @@
 <div class="buttons">
   <button class= "button" id="clear">Clear</button>
 </div>
-
+  <p id ="values"></p>
 
 <script>
-function addGridItems(e){
+/* function addGridItems(e){
     console.log(e);
   input.textContent=wantedNumberOfGridItems;
   
@@ -29,10 +29,17 @@ content.classList.add('content');
 container.appendChild(content);
 numberOfGridItems +=1;
   }
-}
+} */
 numberOfGridItems=0;
 const userInput = document.querySelector('.userInput');
-userInput.addEventListener ('input', addGridItems());
+  const log= document.getElementById('values');
+  userInput.addEventListener('input', updateValue);
+  function updateValue(e){
+    console.log(e);
+  log.textContent = e.target.value;
+  }
+  
+//userInput.addEventListener ('input', addGridItems());
 
 
 </script>
