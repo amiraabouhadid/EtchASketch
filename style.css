@@ -3,8 +3,8 @@ html{
 }
 .container{
 	display: grid;
-	width: 64px;
-	height: 64px;
+	width: 200px;
+	height: 200px;
 	background-color: white; 
 	padding: 10px;	
 }
@@ -15,7 +15,7 @@ html{
         border: 1px solid black; 
 }
 .rows{
-	padding: 20px; 
+	padding: 1px; 
 	background-color: rgba(255, 255, 255, 0.8);
         border: 1px solid black; 
 
