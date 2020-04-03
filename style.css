@@ -5,7 +5,6 @@ html{
 	display: grid;
 	width: 64px;
 	height: 64px;
-	grid: auto;
 	background-color: white; 
 	padding: 10px;	
 }
