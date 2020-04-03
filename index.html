@@ -17,9 +17,9 @@
   <p id ="values"></p>
 
 <script>
-/*function addGridItems(e){
-  log.textContent=e.target.value;
-   let wantedNumberOfGridItems= Number(log.textContent);
+function addGridItems(inputNum){
+
+   let wantedNumberOfGridItems= inputNum;
 
   
 while(numberOfGridItems < wantedNumberOfGridItems){
@@ -30,7 +30,7 @@ content.classList.add('content');
 container.appendChild(content);
 numberOfGridItems +=1;
   }
-} */
+} 
 numberOfGridItems=0;
 
 const userInput = document.querySelector('.userInput');  
@@ -38,9 +38,11 @@ const log= document.getElementById('values');
   userInput.addEventListener('input', updateValue);
   function updateValue(e){
   log.textContent=e.target.value;
-    console.log(log.textContent);
+    console.log(Number(log.textContent));
+    let dimensions=Number(log.textContent);
+    return dimensions; 
   }
- 
+  addGridItems(dimensions);
 //userInput.addEventListener ('input', addGridItems());
 
 
