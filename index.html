@@ -22,13 +22,13 @@ function addGridItems(inputNum){
    let wantedNumberOfGridItems= inputNum;
 
   console.log(wantedNumberOfGridItems);
-while(numberOfGridItems < wantedNumberOfGridItems){
-const container = document.querySelector('.container');
-const content = document.createElement('div');
-content.classList.add('content');
+    while(numberOfGridItems < wantedNumberOfGridItems){
+      const container = document.querySelector('.container');
+      const content = document.createElement('div');
+      content.classList.add('content');
 console.log(numberOfGridItems);
-container.appendChild(content);
-numberOfGridItems +=1;
+      container.appendChild(content);
+      numberOfGridItems +=1;
   
   }
 } 
@@ -41,10 +41,11 @@ const log= document.getElementById('values');
   log.textContent=e.target.value;
     console.log(Number(log.textContent));
     let dimensions=Number(log.textContent);
-    return dimensions; 
+    addGridItems(dimensions);
+    
   }
-  console.log(updateValue);
-  addGridItems(updateValue);
+ 
+
 //userInput.addEventListener ('input', addGridItems());
 
 
