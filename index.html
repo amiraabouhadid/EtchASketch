@@ -5,7 +5,7 @@
 </head>
 <body>
   <form>
-    <input class="userInput" type = "text">
+    <input class="userInput" type = "text" >
       <input type="button" id="submit" value="choose">
   </form>
     
@@ -17,9 +17,9 @@
   <p id ="values"></p>
 
 <script>
-/* function addGridItems(e){
-    console.log(e);
-  input.textContent=wantedNumberOfGridItems;
+function addGridItems(e){
+   let wantedNumberOfGridItems= e.target.value;
+
   
 while(numberOfGridItems < wantedNumberOfGridItems){
 const container = document.querySelector('.container');
@@ -29,17 +29,11 @@ content.classList.add('content');
 container.appendChild(content);
 numberOfGridItems +=1;
   }
-} */
+} 
 numberOfGridItems=0;
-const userInput = document.querySelector('.userInput');
-  const log= document.getElementById('values');
-  userInput.addEventListener('input', updateValue);
-  function updateValue(e){
-    console.log(e);
-  log.textContent = e.target.value;
-  }
-  
-//userInput.addEventListener ('input', addGridItems());
+
+const userInput = document.querySelector('.userInput');  
+userInput.addEventListener ('input', addGridItems());
 
 
 </script>
