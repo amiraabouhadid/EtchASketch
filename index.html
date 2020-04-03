@@ -27,27 +27,10 @@ function addGridItems(inputNum){
       content.classList.add('content');
      
       container.appendChild(content);
-    
-      document.querySelector('.container').style.gridTemplateColumns= repeat(auto,1fr);
-      //document.querySelector('.container').style.rowWidth= 1fr;
-      document.querySelector('.container').style.columnCount=inputNum;
-      //document.querySelector('.container').style.rowCount=inputNum;
-     
+  
+     //document.querySelector('.container').style.gridAutoFlow="row dense";
 
       numberOfColumns +=1;
-      
-    
-     /*while(numberOfRows <=wantedColumnsAndRows){
-      const container = document.querySelector('.container');
-      const rows= document.createElement('div');
-      rows.classList.add('rows');
-      container.appendChild(rows);
-      document.querySelector('.container').style.gridAutoFlow="row dense";
-        console.log(numberOfRows);
-       numberOfRows +=1;
-      
-     }
-      */
   
   }
 } 
