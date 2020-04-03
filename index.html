@@ -6,16 +6,13 @@
 <body>
   <form>
     <input class="userInput" type = "text" >
-      <input type="button" id="submit" value="choose">
   </form>
-    
-<div class= "container">
-</div>
 <div class="buttons">
   <button class= "button" id="clear">Clear</button>
 </div>
-  <p id ="values"></p>
-
+  
+<div id= "container">
+</div>
 <script>
 function createGrid(){
   for(let x=0; x<256; x++){
@@ -33,20 +30,14 @@ function addGridItems(inputNum){
     container.appendChild(newDiv);
   }
 } 
-//function colorToggle(){}
+function colorToggle(){
+  if(
+}
 
 
 
-const userInput = document.querySelector('.userInput');  
-const log= document.getElementById('values');
-  userInput.addEventListener('input', updateValue);
-  function updateValue(e){
-  log.textContent=e.target.value;
-    console.log(Number(log.textContent));
-    let dimensions=Number(log.textContent);
-    addGridItems(dimensions);
-    
-  }
+
+
  
 
 
