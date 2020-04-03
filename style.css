@@ -5,12 +5,13 @@ html{
 	display: grid;
 	width: 960px;
 	height: 960px;
-	grid-template-columns: auto auto auto; 
+	grid: auto;
 	background-color: white; 
 	padding: 10px;	
 }
 .columns{
-  	padding: 20px; 
+	
+  	padding: 5px; 
 	background-color: rgba(255, 255, 255, 0.8);
         border: 1px solid black; 
 }
