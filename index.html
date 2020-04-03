@@ -17,7 +17,7 @@
   <p id ="values"></p>
 
 <script>
-function addGridItems(e){
+/*function addGridItems(e){
   log.textContent=e.target.value;
    let wantedNumberOfGridItems= Number(log.textContent);
 
@@ -30,13 +30,18 @@ content.classList.add('content');
 container.appendChild(content);
 numberOfGridItems +=1;
   }
-} 
+} */
 numberOfGridItems=0;
 
 const userInput = document.querySelector('.userInput');  
 const log= document.getElementById('values');
+  userInput.addEventListener('input', updateValue);
+  function updateValue(e){
+  log.textContent=e.target.value;
+    console.log(log.textContent);
+  }
  
-userInput.addEventListener ('input', addGridItems());
+//userInput.addEventListener ('input', addGridItems());
 
 
 </script>
