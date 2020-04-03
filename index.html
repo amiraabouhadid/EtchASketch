@@ -29,7 +29,8 @@ function addGridItems(inputNum){
      
       container.appendChild(content);
       document.querySelector('.container').style.gridAutoFlow="column dense";
-      document.querySelector('.content').style.columnWidth=(1/inputNum) %;
+      let columnWidth =(1/inputNum *100)*200;
+      document.querySelector('.content').style.columnWidth=(columnWidth)px;
        document.querySelector('.content').style.columnCount=inputNum;
      
       console.log(numberOfColumns);
