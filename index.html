@@ -4,16 +4,27 @@
 <title>Etch A Sketch</title>
 </head>
 <body>
-  <form>
-    <input class="userInput" type = "text" >
-  </form>
+<h1> Etch A Sketch! </h1>
+  <h2>Draw using your mouse</h2>
 <div class="buttons">
-  <button class= "button" id="clear">Clear</button>
+  <button class= "button" id="clearButton">Clear</button>
+  <button class = "button" id="toggle" onclick="colorToggle()"> Draw with black</button>
 </div>
   
 <div id= "container">
 </div>
 <script>
+//variables 
+  let colorOption = "black";
+  let gridDimensions
+  
+ //DOM Elements
+  const container = document.querySelector('#container');
+  const resetButton = document.querySelector('#clearButton');
+  const selectRandom = document.querySelector('#selectRandom');
+  const selectBlack = document.querySelector('#selectBlack');
+  
+//functions  
 function createGrid(){
   for(let x=0; x<256; x++){
   let newDiv=document.createElement('div');
@@ -31,10 +42,27 @@ function addGridItems(inputNum){
   }
 } 
 function colorToggle(){
-  if(
+  if( colorOption === "black"){
+  colorOption = "random";
+    document.querySelector('#toggle').textContent = "draw with black";
+  }else{
+    colorOption = "black"; 
+  document.querySelector('#toggle').textContent= "draw with random colors";
+  }
+  return colorOption; 
 }
-
-
+function randomColor(){
+var letters='0123456789ABCDEF';
+var color = '#';
+  for (var i=0; i<6; i++){
+  color += letters[Math.floor(Math.random()*16)];
+  }
+  return color; 
+}
+// Event Listeners
+document
+//
+createGrid();
 
 
 
