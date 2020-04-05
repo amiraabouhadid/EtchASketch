@@ -10,13 +10,7 @@ html{
     	border: 4px solid orange;
 	
 }
-#center{
-	display: flex;
-	height: 100%;
-	align-items: center;
-	justify-content: center;
-	margin: 0 auto;
-}
+
 .gridSquare{
 	display: inline-block;
     	background-color: white;
