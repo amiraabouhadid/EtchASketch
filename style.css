@@ -1,6 +1,6 @@
 html{
-        background-color: white;
-	align-items: center; 
+        background-color: blue;
+	
 }
 #container{
 	display: grid;
@@ -11,8 +11,10 @@ html{
 	
 }
 #center{
-	display: inline-block; 
-	text-align: center;
+	position: absolute; 
+	left: 50%;
+	right: 50%;
+	margin: 0 auto;
 }
 .gridSquare{
 	  display: inline-block;
