@@ -63,7 +63,7 @@ var color = '#';
   return /^\d+$/.test(value);
  }
 // Event Listeners
-document.getElementById("container").addEventListener("mouseover, function(e) {
+document.getElementById("container").addEventListener("mouseover", function(e) {
          var target=e.target;
          if (colorOption == "random"){
             target.style.backgroundColor = randomColor();
