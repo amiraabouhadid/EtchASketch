@@ -59,16 +59,38 @@ var color = '#';
   }
   return color; 
 }
+ function isNumeric(value){
+  return /^\d+$/.test(value);
+ }
 // Event Listeners
-document
+document.getElementById("container").addEventListener("mouseover, function(e) {
+         var target=e.target;
+         if (colorOption == "random"){
+            target.style.backgroundColor = randomColor();
+          }else {
+            target.style.backgroundColor= "black";
+          }}, false); 
+resetButton.addEventListener('click', () => {
+  var squares= [].slice.call(container.children);
+  squares.forEach(function(e){
+    e.style.backgroundColor = "white";});
+  for (let valid =0; valid <1;){
+    gridDimensions = window.prompt('what dimensions do you want for the new grid?');
+    if (isNumeric(gridDimensions === false){
+        alert ('invalid entry, please try again.');
+  }else{
+    gridDimensions =parseInt(gridDimensions);
+    squares.forEach(function(e){
+      e.remove()});
+    document.getElementById('container').style.gridTemplateColumns = `repeat(${gridDimensions},1fr)`;
+    document.getElementById('container').style.gridTemplateRows= `repeat(${gridDimensions},1fr)`;
+    addGridItems(gridDimensions); 
+    break;
+    }
+}}) 
+                                                
 //
 createGrid();
-
-
-
- 
-
-
 
 </script>
 </body>
