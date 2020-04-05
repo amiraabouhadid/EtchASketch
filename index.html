@@ -28,16 +28,16 @@
 function createGrid(){
   for(let x=0; x<256; x++){
   let newDiv=document.createElement('div');
-   newDiv=setAttribute("id",x);
-   newDiv=setAttribute("class", "gridSquare");
+   div.setAttribute("id",x);
+   div.setAttribute("class", "gridSquare");
    container.appendChild(newDiv);
   }
 }
 function addGridItems(inputNum){
   for(let x=0; x<(inputNum*inputNum);x++){
     let newDiv=document.createElement('div');
-    newDiv=setAttribute("id",x);
-    newDiv=setAttribute("class", "gridSquare");
+    div.setAttribute("id",x);
+    div.setAttribute("class", "gridSquare");
     container.appendChild(newDiv);
   }
 } 
