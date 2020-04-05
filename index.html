@@ -42,12 +42,12 @@ function addGridItems(inputNum){
   }
 } 
 function colorToggle(){
-  if( colorOption === "black"){
-  colorOption = "random";
-    document.querySelector('#toggle').textContent = "draw with black";
+  if( colorOption === "random"){
+  colorOption = "black";
+    document.querySelector('#toggle').textContent = "draw with random colors";
   }else{
-    colorOption = "black"; 
-  document.querySelector('#toggle').textContent= "draw with random colors";
+    colorOption = "random"; 
+  document.querySelector('#toggle').textContent= "draw with black";
   }
   return colorOption; 
 }
