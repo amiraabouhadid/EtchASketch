@@ -4,7 +4,8 @@
 This project is taken from The Odin Project Curriculum. A user interface that allows users to  sketch shapes by passing the cursor over the squares. Users can sketch with black or multiple colors. 
 You can also select the size of the pixels you want to draw with!
 ![Screenshot from 2022-02-25 17-03-37](https://user-images.githubusercontent.com/56790126/155738052-35a7795e-55d7-4646-934e-f0c78f65145a.png)
-![Screenshot from 2022-02-25 17-03-57](https://user-images.githubusercontent.com/56790126/155738064-49ad7f5c-5f38-4d5f-a941-71705ab6834b.png)
+![Screenshot from 2022-02-25 17-03-57](https://user-images.githubusercontent.com/56790126/155738201-7f66d877-d9c6-4f0e-af6a-061e088dc0af.png)
+
 
 ### Live Demo
 
